@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Japanese pitch accent table." />
+    <meta name="keywords" content="japanese,pitch,accent,table" />
+    <meta name="author" content="toasted-nutbread" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Japanese Pitch Accent Table</title>
+    <link rel="icon" type="image/gif" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABp0lEQVQ4y61TPYvyYBCcHCcIYm9hbbpHQaIBQUWuERELEaxU7P0LlqI/QEhre/4CrRQbiytSiSCCjSBIFB8MMaSYt3gh9+V9FLewzbLM7uzMAn8d/BzP3/U/3Cs2Gg0oigLHcX4c+EiSH4tSSgBAIBAAgNq9HgBQFEUBSUopCeDXeTwe6YPe4cxYLMZqtcqfAgCUt8cDgNvthmQyCSklstksTNOEEAKqqiKXyyGVSiEUCr1SeLuFaZoslUoEQF3XeTqdOJvNCIDD4ZD1ep2apnG9Xn+msFwuCYC9Xo+dTocAaNs2a7Ua2+02Pc/j+XymEIL5fJ6u6/4HIcnr9UpN09hqtei6Lg3DIAAOBgNGo1Fut1ufd7/fJwDudrtXgNVqRQCcTqckyclkQgAMh8M0TfPd4brdLgFwv9+TJB8AIBgMAgBs28blcsFms4EQAvP5HPF43Nf9cDjAMAw0m01EIpH31h2PxywUCiyXyxyNRrQsiyTpeR4ty+JisWCxWGSlUvGn+zJ+5TTHcZBIJKCqKnRdRyaTQTqd9jf2ZfziqV6+8dDTn33vP8Z7nzOY3qCOAAAAAElFTkSuQmCC">
+    <style>
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #f8f8f8;
+}
+.content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    white-space: nowrap;
+}
+.content::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+.table-container {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+}
+table {
+    white-space: nowrap;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 1em;
+    background-color: #ffffff;
+}
+table td {
+    border: 1px solid #000000;
+    padding: 0.25em 0.5em;
+    text-align: center;
+}
+table td>div {
+    display: inline-block;
+    text-align: left;
+}
+.heiban {
+    background-color: #d0d0d0;
+}
+.atamadaka {
+    background-color: #e0e0e0;
+}
+.odaka {
+    background-color: #c0c0c0;
+}
+.odaka-indicator {
+    background-color: #c0c0c0;
+    display: inline-block;
+    width: 3em;
+    height: 1em;
+    border: 1px solid #000000;
+    vertical-align: middle;
+    margin: 0 0.25em;
+}
+@media print {
+    body {
+        background-color: transparent;
+    }
+}
+    </style>
+</head>
+<body><div class="content"><div class="table-container">
+
+<table>
+    <thead>
+        <tr>
+            <td rowspan="3"></td>
+            <td><div>平板式</div></td>
+            <td colspan="6"><div>起伏式</div></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><div>頭高型</div></td>
+            <td colspan="5"><div>中高型 &bull; 尾高型 (<span class="odaka-indicator"></span>)</div></td>
+        </tr>
+        <tr>
+            <td><div>[0]</div></td>
+            <td><div>[1]</div></td>
+            <td><div>[2]</div></td>
+            <td><div>[3]</div></td>
+            <td><div>[4]</div></td>
+            <td><div>[5]</div></td>
+            <td><div>[6]</div></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><div>ー拍語</div></td>
+            <td class="heiban"><div>
+                <div><sub>●</sub><sup>○</sup></div>
+                <div>ナ</div>
+                <div>名</div>
+            </div></td>
+            <td class="atamadaka"><div>
+                <div><sup>●</sup><sub>○</sub></div>
+                <div>キ</div>
+                <div>木</div>
+            </div></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><div>二拍語</div></td>
+            <td class="heiban"><div>
+                <div><sub>●</sub><sup>●○</sup></div>
+                <div>ミズ</div>
+                <div>水</div>
+            </div></td>
+            <td class="atamadaka"><div>
+                <div><sup>●</sup><sub>●○</sub></div>
+                <div>アキ</div>
+                <div>秋</div>
+            </div></td>
+            <td class="odaka"><div>
+                <div><sub>●</sub><sup>●</sup><sub>○</sub></div>
+                <div>ハナ</div>
+                <div>花</div>
+            </div></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><div>三拍語</div></td>
+            <td class="heiban"><div>
+                <div><sub>●</sub><sup>●●○</sup></div>
+                <div>カイシャ</div>
+                <div>会社</div>
+            </div></td>
+            <td class="atamadaka"><div>
+                <div><sup>●</sup><sub>●●○</sub></div>
+                <div>デンキ</div>
+                <div>電気</div>
+            </div></td>
+            <td><div>
+                <div><sub>●</sub><sup>●</sup><sub>●○</sub></div>
+                <div>オカシ</div>
+                <div>お菓子</div>
+            </div></td>
+            <td class="odaka"><div>
+                <div><sub>●</sub><sup>●●</sup><sub>○</sub></div>
+                <div>オトコ</div>
+                <div>男</div>
+            </div></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><div>四拍語</div></td>
+            <td class="heiban"><div>
+                <div><sub>●</sub><sup>●●●○</sup></div>
+                <div>ダイガク</div>
+                <div>大学</div>
+            </div></td>
+            <td class="atamadaka"><div>
+                <div><sup>●</sup><sub>●●●○</sub></div>
+                <div>ブンガク</div>
+                <div>文学</div>
+            </div></td>
+            <td><div>
+                <div><sub>●</sub><sup>●</sup><sub>●●○</sub></div>
+                <div>ユキグニ</div>
+                <div>雪国</div>
+            </div></td>
+            <td><div>
+                <div><sub>●</sub><sup>●●</sup><sub>●○</sub></div>
+                <div>サイジキ</div>
+                <div>歳時記</div>
+            </div></td>
+            <td class="odaka"><div>
+                <div><sub>●</sub><sup>●●●</sup><sub>○</sub></div>
+                <div>オトウト</div>
+                <div>弟</div>
+            </div></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><div>五拍語</div></td>
+            <td class="heiban"><div>
+                <div><sub>●</sub><sup>●●●●○</sup></div>
+                <div>チュウゴクゴ</div>
+                <div>中国語</div>
+            </div></td>
+            <td class="atamadaka"><div>
+                <div><sup>●</sup><sub>●●●●○</sub></div>
+                <div>シャーベット</div>
+                <div>シャーベット</div>
+            </div></td>
+            <td><div>
+                <div><sub>●</sub><sup>●</sup><sub>●●●○</sub></div>
+                <div>フキュウリツ</div>
+                <div>普及率</div>
+            </div></td>
+            <td><div>
+                <div><sub>●</sub><sup>●●</sup><sub>●●○</sub></div>
+                <div>ヤマノボリ</div>
+                <div>山登り</div>
+            </div></td>
+            <td><div>
+                <div><sub>●</sub><sup>●●●</sup><sub>●○</sub></div>
+                <div>コガタバス</div>
+                <div>小型バス</div>
+            </div></td>
+            <td class="odaka"><div>
+                <div><sub>●</sub><sup>●●●●</sup><sub>○</sub></div>
+                <div>モモノハナ</div>
+                <div>桃の花</div>
+            </div></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><div>六拍語</div></td>
+            <td class="heiban"><div>
+                <div><sub>●</sub><sup>●●●●●○</sup></div>
+                <div>ケンブツニン</div>
+                <div>見物人</div>
+            </div></td>
+            <td class="atamadaka"><div>
+                <div><sup>●</sup><sub>●●●●●○</sub></div>
+                <div>ケンモホロロ</div>
+                <div>けんもほろろ</div>
+            </div></td>
+            <td><div>
+                <div><sub>●</sub><sup>●</sup><sub>●●●●○</sub></div>
+                <div>オマワリサン</div>
+                <div>お巡りさん</div>
+            </div></td>
+            <td><div>
+                <div><sub>●</sub><sup>●●</sup><sub>●●●○</sub></div>
+                <div>キンコンシキ</div>
+                <div>金婚式</div>
+            </div></td>
+            <td><div>
+                <div><sub>●</sub><sup>●●●</sup><sub>●●○</sub></div>
+                <div>コクゴジテン</div>
+                <div>国語辞典</div>
+            </div></td>
+            <td><div>
+                <div><sub>●</sub><sup>●●●●</sup><sub>●○</sub></div>
+                <div>タンサンガス</div>
+                <div>炭酸ガス</div>
+            </div></td>
+            <td class="odaka"><div>
+                <div><sub>●</sub><sup>●●●●●</sup><sub>○</sub></div>
+                <div>ジュウイチガツ</div>
+                <div>十一月</div>
+            </div></td>
+        </tr>
+    </tbody>
+</table>
+
+</div></div></body>
+</html>

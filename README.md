@@ -1,0 +1,1 @@
+https://toasted-nutbread.github.io/japanese-pitch-accent-table/
